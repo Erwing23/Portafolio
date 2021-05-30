@@ -5,14 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <title>Erwing Medina</title>
     </head>
     <body>
         <div id="navbar">
             <a href="index.html"><img src="./img/logo.png" alt="" /></a>
             <div class="links">
                 <ul>
-                    <li><a href="">Inicio</a></li>
+                    <li><a href="index.html">Inicio</a></li>
                     <li>Portafolio</li>
                     <li>Acerca</li>
                     <li>Blog</li>
@@ -32,6 +40,22 @@
                     >
                     <div class="btn btnCV">Curriculum</div>
                 </div>
+                <div class="redes">
+                    <a href="https://github.com/Erwing23/">
+                        <i class="icon fab fa-github-square"></i
+                    ></a>
+                    <a
+                        href="https://www.linkedin.com/in/erwing-medina-burbano-350340186/"
+                    >
+                        <i class="icon fab fa-linkedin"></i
+                    ></a>
+                    <a href="https://twitter.com/erwing_medina">
+                        <i class="icon fab fa-twitter-square"></i
+                    ></a>
+                    <a href="mailto:erwingdelfines@hotmail.com"
+                        ><i class="icon fas fa-envelope-square"></i
+                    ></a>
+                </div>
             </div>
             <div class="custom-shape-divider-bottom-1620813312">
                 <svg
@@ -49,10 +73,30 @@
         </div>
         <div id="proyectos">
             <div class="card">
-                <img src="./img//proyectos/Proyecto1.png" alt="" />
+                <img
+                    id="thumbnail"
+                    src="./img//proyectos/Proyecto1.png"
+                    alt=""
+                />
                 <div class="titulo">Gitloops</div>
                 <div class="description">
                     Una landing page responsive, enfocada al E-Commerce
+                </div>
+                <div class="proyect-actions">
+                    <a
+                        href="https://github.com/Erwing23/JavaBD "
+                        target="_blank"
+                        ><div class="preview tools-btn">
+                            Preview <img src="img/eye.svg" alt="" /></div
+                    ></a>
+
+                    <a
+                        href="https://github.com/Erwing23/JavaBD "
+                        target="_blank"
+                    >
+                        <div class="preview tools-btn">
+                            Código <img src="img/github.svg" alt="" /></div
+                    ></a>
                 </div>
                 <div class="tools">
                     <img src="./img/tools/html-5.svg" alt="" />
@@ -61,10 +105,32 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img//proyectos/Proyecto1.png" alt="" />
-                <div class="titulo">Gitloops</div>
+                <img
+                    id="thumbnail"
+                    src="./img//proyectos/Proyecto1.png"
+                    alt=""
+                />
+                <div class="titulo">
+                    <a href="#">Gitloops </a>
+                </div>
                 <div class="description">
                     Una landing page responsive, enfocada al E-Commerce
+                </div>
+                <div class="proyect-actions">
+                    <a
+                        href="https://github.com/Erwing23/JavaBD "
+                        target="_blank"
+                        ><div class="preview tools-btn">
+                            Preview <img src="img/eye.svg" alt="" /></div
+                    ></a>
+
+                    <a
+                        href="https://github.com/Erwing23/JavaBD "
+                        target="_blank"
+                    >
+                        <div class="preview tools-btn">
+                            Código <img src="img/github.svg" alt="" /></div
+                    ></a>
                 </div>
                 <div class="tools">
                     <img src="./img/tools/html-5.svg" alt="" />
@@ -73,12 +139,36 @@
                 </div>
             </div>
             <div class="card">
-                <img src="./img//proyectos/Proyecto2.png" alt="" />
-                <div class="titulo">Reservas Ecuador</div>
+                <img
+                    id="thumbnail"
+                    src="./img//proyectos/Proyecto2.png"
+                    alt=""
+                />
+                <div class="titulo">
+                    <a href="#"
+                        >Reservas <br />
+                        Ecuador</a
+                    >
+                </div>
                 <div class="description">
                     Un sistema capaz de realizar reservaciones y registrarlas en
                     una base de datos
                 </div>
+                <div class="proyect-actions">
+                    <a href="./proyectos/reservas.html"
+                        ><div class="preview tools-btn">
+                            Preview <img src="img/eye.svg" alt="" /></div
+                    ></a>
+
+                    <a
+                        href="https://github.com/Erwing23/JavaBD "
+                        target="_blank"
+                    >
+                        <div class="preview tools-btn">
+                            Código <img src="img/github.svg" alt="" /></div
+                    ></a>
+                </div>
+
                 <div class="tools">
                     <img src="./img/tools/java.svg" alt="" />
                     <img src="./img/tools/mysql.svg" alt="" />
@@ -88,16 +178,23 @@
         <div class="quote">
             <img id="smallskull1" src="./img/smallskull1.jpg" alt="" />
             <img id="smallskull2" src="./img/smallskull2.jpg" alt="" />
-
-            <img id="comilla1" src="./img/quote.png" alt="" />
-            <img id="comilla2" src="./img/quote.png" alt="" />
-            <h1>
-                Haz lo que te gusta, ponlo al servicio de los demás <br />
-                y el resto vendrá solo. <br />
-            </h1>
-            <h3 id="padre">-Padre</h3>
+            <div class="frase">
+                <img id="comilla1" src="./img/quote.png" alt="" />
+                <img id="comilla2" src="./img/quote.png" alt="" />
+                <h1>
+                    Haz lo que te gusta, ponlo al servicio de los demás, y el
+                    resto vendrá solo
+                </h1>
+                <h3 id="padre">-Padre</h3>
+            </div>
         </div>
         <div class="footer">© Diseñado con Propósito</div>
         <script src="js/navbar.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+            integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
     </body>
 </html>

@@ -1,0 +1,360 @@
+@font-face {
+    font-family: "myriad";
+    src: url(https://erwing23.github.io/IoTpage/fonts/Myriad-Pro-Regular.ttf);
+}
+@font-face {
+    font-family: "poppinsbold";
+    src: url(https://erwing23.github.io/IoTpage/fonts/Poppins-Bold.ttf);
+}
+:root {
+    --carta: gray;
+}
+* {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "myriad";
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #000052;
+    color: white;
+}
+a {
+    text-decoration: none;
+    font-family: "poppinsbold";
+    height: auto;
+}
+#navbar {
+    background-color: #241d33;
+    height: 50px;
+    width: 100vw;
+    line-height: 50px;
+    position: fixed;
+    top: 0;
+    border: 5px solid transparent;
+    border-image: linear-gradient(
+        to bottom right,
+        #feb917 50%,
+        #14e62c 66.6%,
+        #00e1fe 83.2%,
+        #fc01fc 100%
+    );
+    border-image-slice: 1;
+    border-top: none;
+    border-left: none;
+    transition: all 0.2s;
+    z-index: 2;
+    display: flex;
+}
+#navbar img {
+    height: 50px;
+    margin-left: 60px;
+}
+#navbar ul {
+    display: flex;
+    margin-left: auto;
+    margin-right: 80px;
+}
+.links {
+    margin-left: auto;
+    font-family: "poppinsbold";
+}
+#navbar ul li {
+    margin-left: 50px;
+    font-family: "poppinsbold";
+}
+#navbar a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    overflow-y: hidden;
+}
+
+#main {
+    position: relative;
+    height: 100vh;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+}
+#skull1 {
+    position: absolute;
+    left: -20px;
+    top: 20%;
+    height: 40vw;
+    z-index: -1;
+    transform: rotate(-5deg);
+    opacity: 0.5;
+}
+#skull2 {
+    position: absolute;
+    right: -20px;
+    top: 21.5%;
+    height: 40vw;
+    z-index: -1;
+    transform: rotate(5deg);
+    opacity: 0.5;
+}
+#info {
+    display: flex;
+
+    text-align: left;
+    align-items: center;
+    justify-content: space-around;
+
+    margin: 0 80px;
+    width: 100vw;
+}
+#info .info-left {
+    width: 50vw;
+    margin-bottom: 10vh;
+}
+#info h1 {
+    font-size: 5rem;
+    font-family: "poppinsbold";
+}
+#info h4 {
+    font-size: 1.5rem;
+}
+#info .banner {
+    width: 33vw;
+    height: auto;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+.redes {
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    bottom: 10%;
+    text-align: center;
+    justify-content: center;
+}
+.icon {
+    background-color: transparent;
+    font-size: 3rem;
+    color: white;
+    margin: 0 20px;
+}
+.tools-btn {
+    background-color: gainsboro;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+.card .proyect-actions a:hover {
+    transition: 1s;
+    transform: scale(1.1);
+}
+.btn {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid red;
+    border-radius: 0.6em;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    font-family: "poppinsbold";
+    font-weight: 700;
+}
+.btnProy {
+    border-color: #feb917;
+    color: #241d33;
+    box-shadow: 0 0 40px 40px #feb917 inset, 0 0 0 0 #feb917;
+    transition: all 150ms ease-in-out;
+}
+.btnProy:hover {
+    box-shadow: 0 0 10px 0 #feb917 inset, 0 0 10px 4px #feb917;
+    color: #fff;
+}
+
+.btnCV {
+    border-color: #14e62c;
+    color: #241d33;
+    box-shadow: 0 0 40px 40px #14e62c inset, 0 0 0 0 #14e62c;
+    transition: all 150ms ease-in-out;
+}
+.btnCV:hover {
+    box-shadow: 0 0 10px 0 #14e62c inset, 0 0 10px 4px #14e62c;
+    color: #fff;
+}
+.custom-shape-divider-bottom-1620813312 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1620813312 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-bottom-1620813312 .shape-fill {
+    fill: #241d33;
+}
+
+#proyectos {
+    padding-top: 75px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color: #241d33;
+    width: 100vw;
+    height: auto;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+#proyectos a {
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+#thumbnail {
+    padding-top: 20px;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 50px;
+    transition: 1s;
+}
+#thumbnail:hover {
+    transform: scale(1.1);
+}
+.tools img {
+    height: 50px;
+}
+.card {
+    text-align: center;
+    border-radius: 20px;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 40px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--carta);
+}
+.titulo a {
+    height: 150px;
+    display: inline-block;
+}
+.titulo {
+    font-family: "poppinsbold";
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
+    justify-content: center;
+    height: 150px;
+
+    /*background-color: #000052;*/
+}
+.description {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    font-size: 1.2rem;
+    height: 80px;
+}
+.proyect-actions {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.proyect-actions img {
+    margin-left: 10px;
+}
+
+.preview {
+    display: flex;
+    align-items: center;
+    font-family: "poppinsbold";
+    color: black;
+}
+
+#proyectos .preview img {
+    width: 32px;
+    height: auto;
+}
+
+.tools {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.quote {
+    position: relative;
+    height: 35vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#smallskull1 {
+    position: absolute;
+    height: 31.5vh;
+    left: 0;
+    margin-top: 0px;
+}
+#smallskull2 {
+    position: absolute;
+    height: 34.65vh;
+    right: 0;
+}
+#comilla1 {
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    height: 8vh;
+    opacity: 0.4;
+}
+#comilla2 {
+    position: absolute;
+    right: 20%;
+    bottom: 18%;
+    height: 8vh;
+    opacity: 0.4;
+    transform: rotate(180deg);
+}
+.frase {
+    width: 60vw;
+    z-index: 12;
+}
+.quote h1 {
+    text-align: center;
+}
+
+#padre {
+    text-align: right;
+    margin-right: 40px;
+}
+.footer {
+    color: black;
+    text-align: center;
+    background: rgb(254, 185, 23);
+    background: linear-gradient(
+        90deg,
+        rgba(254, 185, 23, 1) 0%,
+        rgba(20, 230, 44, 1) 33%,
+        rgba(0, 225, 254, 1) 66%,
+        rgba(252, 1, 252, 1) 100%
+    );
+}
